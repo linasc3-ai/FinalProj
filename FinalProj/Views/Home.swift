@@ -89,7 +89,7 @@ struct Home: View {
                 
                 // start new workout button
                 HStack {
-                    Text("Ready to workout? Tap below to begin.").font(.largeTitle).fontWeight(.bold).padding().foregroundStyle(.white)
+                    Text("Ready to workout?").font(.largeTitle).fontWeight(.bold).padding().foregroundStyle(.white)
                     
                     NavigationLink(destination: ExerciseView()) {
                         Text("Start Workout").foregroundStyle(.white)
