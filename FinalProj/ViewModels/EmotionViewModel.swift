@@ -35,7 +35,7 @@ class EmotionViewModel: ObservableObject {
     func saveEmotion(emotion: Emotion) {
         // create new emotion object based on the data passed from the emotionScreener view
         // create a new emotion with the viewContext that contains emotion data from core data 
-           let emotionEntry = ModelEmotions(context: viewContext)
+           let emotionEntry = EmotionObj(context: viewContext)
            emotionEntry.name = emotion.name
            emotionEntry.emoji = emotion.emoji
            emotionEntry.severity = emotion.severity
